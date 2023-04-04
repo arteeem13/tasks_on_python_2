@@ -1,2 +1,3 @@
-## In this project done:
-### 1) guess the number game
+## In this project done games:
+### 1) guess the number
+### 2) magic ball

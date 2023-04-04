@@ -1,4 +1,4 @@
-from src.main.python.com.andreev.guess_the_number_game.play import start_play
+from src.main.python.com.andreev.guess_the_number.logic import start_play
 
 print('Добро пожаловать в числовую угадайку')
 start_play()
