@@ -2,11 +2,16 @@ from random import *
 
 
 def start_play():
-    random_n = randint(1, 100)
+    input_top_n = int(input('Нужно угадать целое положительное число в диапазоне от 1 до n включительно. '
+                            'Введите целое число n больше 1: '))
+    if input_top_n <= 1:
+        input_top_n = int(input('Ошибка ввода. Введите целое число n больше 1: '))
+
+    random_n = randint(1, input_top_n)
     flag_input_n = False
     attempts_number = 1
 
-    input_n = int(input('Введите целое число от 1 до 100 включительно: '))
+    input_n = int(input('Введите целое число от 1 до {} включительно: '.format(input_top_n)))
 
     def is_valid(input_number):
         if 1 <= input_number <= 100:
