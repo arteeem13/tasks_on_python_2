@@ -1,1 +1,2 @@
-# tasks_on_python_2
+## In this project done:
+### 1) guess the number game
